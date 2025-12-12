@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px 0;
+    background-image: linear-gradient(to bottom right, #f7f4d5, #839958, #105666);
+    font-family: "Caprasimo", serif;
+}
+.todo-list {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(30px);
+}
+.add-task {
+    font-size: 12rem;
+}

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
   </head>
   <body>
-    <h1>TODOLIST</h1>
+    <div class="container">
+      <div class="todo-list">
+      <h1>TO DO LIST</h1>
+      <form action="post" class="row">
+       <input type="task" id="add-task" placeholder="Ajouter une tâche...">
+       <button type="submit" id="valid-btn"><i class="fa-solid fa-plus"></i></button>
+      </form>
+    </div>
+   </div>
 
-    <!-- Container for task -->
-    <ul id="todo"></ul>
-
-    <!-- Input to write a new task and send it -->
-    <input id="new-todo-text" type="text" />
-    <button id="add-item">Add</button>
-
-    <!-- JS scripts that handle the click on add-item button -->
     <script src="todolist.js"></script>
   </body>
 </html>
