@@ -33,3 +33,33 @@
 .add-task {
     font-size: 12rem;
 }
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f4d5;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 7px;
+    font-weight: 14px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background-color: #839958;
+    color: #f7f4d5;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #105666;
+}
