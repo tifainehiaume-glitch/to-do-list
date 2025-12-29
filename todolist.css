@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    color: #fff;
+    color: #f7f4d5;
     border-radius: 20px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
     border: 3px solid rgba(255, 255, 255, 0.18);
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f7f4d5;
+    background-color: rgba(247, 244, 213, 0.5);
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -55,11 +55,14 @@ button {
     outline: none;
     padding: 7px 12px;
     border-radius: 30px;
-    background-color: #839958;
+    background-color: rgba(131, 153, 88, 0.8);
     color: #f7f4d5;
     font-size: 14px;
     cursor: pointer;
 }
 button:hover {
     background-color: #105666;
+}
+ul::before {
+    
 }
