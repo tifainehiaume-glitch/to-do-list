@@ -8,6 +8,15 @@ addEventListener("load", (event) => {
     // Put taskText into the list item
     listItem.innerText = text
 
+    // Create button to mark task as done
+    const doneBtn = document.createElement('button')
+    doneBtn.className = 'task-done-toggle'
+    doneBtn.innerText = '✔'
+    doneBtn.addEventListener('click', onTaskDoneToggleClick)
+
+    // add button to list item content
+    listItem.append(doneBtn)
+
     return listItem
   }
 
@@ -27,6 +36,22 @@ addEventListener("load", (event) => {
   
     // Reset input
     taskTitleInput.value = ''
+  }
+
+  function onTaskDoneToggleClick(event) {
+    // Retrieve button and its related task
+    const doneBtn = event.target
+    const task = doneBtn.parentElement
+
+    // Toggle 'done' status of the task
+    const isTaskAlreadyDone = task.classList.contains('done')
+    if (isTaskAlreadyDone) {
+      task.classList.remove('done')
+      doneBtn.innerText = '✔' 
+    } else {
+      task.classList.add('done')
+      doneBtn.innerText = '↶'
+    }
   }
 
   // Handle form submission
